@@ -4,18 +4,20 @@ public void setup()
 	size(400,400);
 	rectMode(CENTER);
 }
-public int coolor == 200;
+
 public void draw()
 {
-	
-	for(int i = 0; i<200;i+=5){
-		fill(50,coolor,coolor);{
-			rect(0,i.400,5);
-			coolor+=2;
+	int coolor = 200;
+	for(int i = 0; i<200;i+=4){
+		noStroke();
+		fill(200-(i*3),255-i,255-i);
+		rect(200,i,410,4);
+		
+		stroke(0);
 			
-		}
+		
 	}
-	background(50,200,200);
+	
 	frac(200,200,200);
 }
 public void mouseDragged()//optional
