@@ -10,15 +10,17 @@ public void draw()
 	int coolor = 200;
 	for(int i = 0; i<200;i+=4){
 		noStroke();
-		fill(200-(i*3),255-i,255-i);
+		fill(200-i,360-i,360-i);
 		rect(200,i,410,4);
-		
-		stroke(0);
-			
-		
+		stroke(0);		
 	}
-	
-	frac(200,200,200);
+	for(int i = 200; i<400;i+=4){
+		noStroke();
+		fill(i-200,i-100,i+200);
+		rect(200,i,410,4);
+		stroke(0);		
+	}
+	frac(200,200,199);
 }
 public void mouseDragged()//optional
 {
@@ -35,7 +37,7 @@ public void frac(int x, int y, float siz)
 	if(siz <= 3){
 		ellipse(-100,0,1,1);
 	}else{
-		frac(x,y,siz/1.5);
+		frac(x,y,siz/1.2);
 		
 	}
 		
