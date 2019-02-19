@@ -34,7 +34,7 @@ public void frac(int x, int y, float siz)
 	//ellipse(x-siz,y,siz*2,siz*2);
 	//ellipse(x+siz,y,siz*2,siz*2);
 
-	if(siz <= 3){
+	if(siz <= 2){
 		ellipse(-100,0,1,1);
 	}else{
 		frac(x,y,siz/1.2);
